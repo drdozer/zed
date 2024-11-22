@@ -212,7 +212,6 @@ impl TerminalPanel {
                     panel.height = serialized_panel.height.map(|h| h.round());
                     panel.width = serialized_panel.width.map(|w| w.round());
                     // TODO kb (de)serialization of the center pane
-                    // TODO kb something panics, if I call cmd-p twice to split, on ond and then on the new pane
                     panel.active_pane.update(cx, |_, cx| {
                         serialized_panel
                             .items
