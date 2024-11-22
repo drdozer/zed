@@ -46,7 +46,7 @@ pub fn init(cx: &mut AppContext) {
             // TODO kb new actions (which keybindings to use?? cmd-k is taken on macOS):
             // * ActivatePaneInDirection, ActivateNextPane, ActivatePreviousPane, ActivatePane,
             // * CloseAllItemsAndPanes, CloseInactiveTabsAndPanes, SwapPaneInDirection,
-            // * SwapItemLeft, SwapItemRight, SplitLeft, SplitUp, SplitRight, SplitDown, SplitHorizontal, SplitVertical,
+            // * SwapItemLeft, SwapItemRight
             workspace.register_action(TerminalPanel::new_terminal);
             workspace.register_action(TerminalPanel::open_terminal);
             workspace.register_action(|workspace, _: &ToggleFocus, cx| {
